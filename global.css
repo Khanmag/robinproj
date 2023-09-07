@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Sen Regular';
+    src: url(./fonts/Sen-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sen Bold';
+    src: url(./fonts/Sen-Bold.ttf);
+}
+
+body, button {
+    font-family: 'Sen Regular';
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, main, footer {
+    max-width: 1440px;
+    width: 100vw;
+}
+main {
+    background-color: black;
+    min-height: 100vh;
+}

@@ -1,0 +1,31 @@
+header {
+    background-color: black;
+    border-bottom: 2px solid white;
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4%;
+}
+.logo img {
+    width: 78px;
+    height: 24px;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+}
+nav button {
+    padding: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+nav button:hover {
+    background-color: #5221E6;
+    font-weight: 900;
+}
