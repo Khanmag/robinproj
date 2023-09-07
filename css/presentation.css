@@ -1,0 +1,35 @@
+.presentation {
+    position: relative;
+    
+    padding: 80px 40px 84px 0;
+    background-color: darkgrey;
+}
+.presentation__img {
+    width: 52%;
+    height: 650px;
+    object-fit: cover;
+    /* object-position: center; default */
+}
+.presentation__text__big {
+    font-size: 78px;
+    font-weight: 700;
+}
+.presentation__text__opacity {
+    opacity: 0.5;
+}
+.presentation__text__small {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    /* line-height: 27px; */
+}
+
+.presentation__text {
+    position: absolute;
+    right: 40px;
+    height: 650px;
+    max-width: 52%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}

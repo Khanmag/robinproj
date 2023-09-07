@@ -29,3 +29,19 @@ nav button:hover {
     background-color: #5221E6;
     font-weight: 900;
 }
+.header-btn {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        height: 72px;
+    }
+    .header-btn {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+}
