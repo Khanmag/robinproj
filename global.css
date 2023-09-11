@@ -39,3 +39,20 @@ main {
     background-color: black;
     min-height: 100vh;
 }
+
+.fat_text {
+    font-weight: 700;
+    line-height: 150%;
+}
+.grey-text {
+    color: #8491A0;
+}
+.green_text {
+    color: #3CC74E;
+}
+.blue_text {
+    color: #609BFF;
+}
+.pink_text {
+    color: #E95D90;
+}

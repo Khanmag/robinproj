@@ -1,0 +1,42 @@
+.work-exp {
+    margin-bottom: 400px;
+    padding: 0 5%;
+}
+
+.work-exp > .grey_text {
+    font-size: 16px;
+}
+.work-exp > h2 {
+    font-size: 55px;
+    font-weight: 700;
+    max-width: 690px;
+}
+
+.work-exp__jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+}
+.work-exp__jobs > * {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
+.work-exp__jobs__big-digit {
+    font-size: 117px;
+}
+.work-exp__jobs__title {
+    font-size: 24px;
+}
+.work-exp__jobs__description {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .work-exp__jobs {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content max-content;
+        row-gap: 24px;
+    }
+}
