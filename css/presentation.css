@@ -1,8 +1,11 @@
 .presentation {
     position: relative;
-    
-    padding: 80px 40px 84px 0;
-    background-color: darkgrey;
+    padding: 168px 40px 84px 0;
+    /* background-color: darkgrey; */
+    background-image: url(../images/presentation_bg.png);
+    background-position: right;
+    background-size: 62.5%;
+    background-repeat: repeat-y;
 }
 .presentation__img {
     width: 52%;
@@ -32,4 +35,34 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .presentation__text__big {
+        font-size: 56px;
+    }
+}
+@media (max-width: 768px) {
+    .presentation {
+        background: none;
+    }
+}
+@media (max-width: 600px) {
+    .presentation__img {
+        width: 100vw;
+        height: 80vw;
+    }
+    .presentation {
+        padding: 0;
+        padding-top: 72px;
+    }
+    .presentation__text {
+        position: static;
+        max-width: 100%;
+        padding: 48px 20px;
+        height: max-content;
+    }
+    .presentation__text__big {
+        font-size: 32px;
+    }
 }
