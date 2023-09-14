@@ -40,12 +40,32 @@ main {
     min-height: 100vh;
 }
 
-.fat_text {
-    font-weight: 700;
-    line-height: 150%;
+main > section, .standart_padding {
+    padding: 120px 72px;
 }
-.grey-text {
-    color: #8491A0;
+h2 {
+    font-size: 55px;
+    font-family: 'Sen Bold';
+}
+@media (max-width: 800px) {
+    main > section, .standart_padding {
+        padding: 80px 40px;
+    }
+}
+@media (max-width: 600px) {
+    main > section, .standart_padding {
+        padding: 48px 20px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.bold_text {
+    font-family: 'Sen Bold';
+}
+.grey_text {
+    color: #8491A0; 
 }
 .green_text {
     color: #3CC74E;
@@ -55,4 +75,7 @@ main {
 }
 .pink_text {
     color: #E95D90;
+}
+.height_text {
+    line-height: 150%;
 }
