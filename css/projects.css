@@ -1,0 +1,85 @@
+
+
+/* .projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 2128px;
+    gap: 24px;
+}
+.projects > * {
+    width: calc(50% - 12px);
+}
+.projects__item > img {
+    width: 100%;
+} */
+
+.projects button {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    border: 1px solid #5221E6;
+    padding: 24px 32px;
+    justify-self: center;
+    align-self: center;
+}
+/* @media (min-width: 800px) {
+    .projects div:nth-child(2) {
+        order: 1;
+    }
+    .projects div:nth-child(3) {
+        order: 3;
+    }
+    .projects div:nth-child(4) {
+        order: 2;
+    }
+    .projects div:nth-child(5) {
+        order: 4;
+    }
+    .projects div:nth-child(6) {
+        order: 5;
+    }
+}
+@media (max-width: 799px) {
+    .projects {
+        height: max-content;
+    }
+    .projects > * {
+        width: 100%;
+    }
+    
+} */
+
+
+/* GRID  */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px max-content 220px max-content 220px;
+    gap: 24px;
+}
+/* .projects__item {
+    grid-row: span 2;
+} */
+/* Can't find better way for positioning */
+@media (min-width: 800px) {
+    .projects div:nth-child(2) {
+        grid-area: 2/1/4/2;
+    }
+    .projects div:nth-child(3) {
+        grid-area: 1/2/3/3;
+    }
+    .projects div:nth-child(4) {
+        grid-area: 4/1/6/2;
+    }
+    .projects div:nth-child(5) {
+        grid-area: 3/2/5/3;
+    }
+}
+@media (max-width: 799px) {
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+}
