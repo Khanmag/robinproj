@@ -1,0 +1,54 @@
+@import url();
+
+.skillset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px 24px ;
+    grid-template-rows: max-content max-content;
+}
+.skillset > div {
+    /* background-color: rgba(127, 255, 212, 0.174); */
+    padding-right: 48px;
+}
+.skillset > div > h4 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 150%;
+}
+.skillset > div > p {
+    font-size: 16px;
+    color: #8491A0;
+    line-height: 150%;
+}
+.skillset > div.skillset_rowspan > p {
+    margin-top: 16px;
+    font-size: 18px;
+}
+.skillset_rowspan {
+    grid-row: span 2;
+}
+.skillset__logo {
+    width: 32px;
+    height: 32px;
+}
+
+@media (max-width: 900px) {
+    .skillset_rowspan {
+        grid-column: span 2;
+    }
+    .skillset {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content max-content;
+    }
+}
+@media (max-width: 500px) {
+    .skillset_rowspan {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .skillset {
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content max-content max-content max-content;
+    }
+}
