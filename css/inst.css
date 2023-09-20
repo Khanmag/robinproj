@@ -42,5 +42,6 @@
     .inst {
         grid-template-columns: 1fr;
         grid-template-rows: 450px 450px;
+        height: max-content;
     }
 }

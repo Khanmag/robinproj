@@ -82,3 +82,13 @@ h2 {
 .height_text {
     line-height: 150%;
 }
+.grey_description {
+    color: #8491A0; 
+}
+.underlined_button {
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #8491A0;
+}

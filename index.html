@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/companies.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/inst.css">
+    <link rel="stylesheet" href="css/dribbble.css">
 </head>
 
 <body>
@@ -235,6 +236,10 @@
                 <button>VIeW ALL PROJECTS</button>
             </div> -->
         </section>
+        <!-- Артикл использует класс из глобала который задаёт паддинги для секций, в данном блоке эти
+        отступы нужны не во всей секции, а только в левой части -->
+        <!-- Дополнительный див внутри артикла для позиционирования флексами, тк кнопка должна быть 
+        всегда внизу, так я расставил их по разным сторонам свойством space-between -->
         <section class="inst">
             <article class="standart_padding">
                 <div class="inst__text">
@@ -250,7 +255,21 @@
             </article>
             <img src="./images/inst.png" alt="inst">
         </section>
-        <section class="dribble"></section>
+        <section class="dribbble">
+            <article>
+                <h2>Dribbble</h2>
+                <p>
+                    Each dribbble shot is made with love and care. 
+                    Do check out my work on Dribbble. 
+                    Likes and comments are appreciated.
+                </p>
+                <button>Follow me on Dribbble</button>
+            </article>
+            <!-- В данном блоке должен быть фрейм, но макет его не прописал, поэтому img -->
+            <div class="dribbble__image">
+                <img src="./images/dribbble.png" alt="dribbble">
+            </div>
+        </section>
         <section class="about_me"></section>
         <section class="photo"></section>
         <section class="form"></section>

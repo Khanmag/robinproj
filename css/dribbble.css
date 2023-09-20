@@ -1,0 +1,47 @@
+
+/* На макете 1440 иные падинги, на остальных экранах стандарт
+Поэтому я задал падинги для экрана выше 1111 пикселей
+Точка 1111 выбрана визуально */
+@media (min-width: 1111px) {
+    .dribbble {
+        padding: 120px 182px;
+    }
+    .dribbble > article > p {
+        max-width: 636px;
+    }
+}
+
+.dribbble > article > p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #5B6876;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.dribbble > article > button {
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #8491A0;
+}
+.dribbble > article > button:hover {
+    color: darkgray;
+    border-bottom-color: darkgray;
+}
+/* Создал класс dribbble__image потому что обращение dribbble > div > img 
+вообще не понятно куда и к какому именно элементу ведёт, мои личные вкусы
+Можно было и не создавать этот класс*/
+.dribbble__image {
+    width: 100%;
+    height: max-content;
+    margin-top: 120px;
+}
+.dribbble__image img {
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    object-fit: cover;
+    object-position: center;
+}
