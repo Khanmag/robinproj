@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/inst.css">
     <link rel="stylesheet" href="css/dribbble.css">
+    <link rel="stylesheet" href="css/about-me.css">
 </head>
 
 <body>
@@ -236,11 +237,11 @@
                 <button>VIeW ALL PROJECTS</button>
             </div> -->
         </section>
-        <!-- Артикл использует класс из глобала который задаёт паддинги для секций, в данном блоке эти
-        отступы нужны не во всей секции, а только в левой части -->
-        <!-- Дополнительный див внутри артикла для позиционирования флексами, тк кнопка должна быть 
-        всегда внизу, так я расставил их по разным сторонам свойством space-between -->
         <section class="inst">
+            <!-- Артикл использует класс из глобала который задаёт паддинги для секций, в данном блоке эти
+        отступы нужны не во всей секции, а только в левой части -->
+            <!-- Дополнительный див внутри артикла для позиционирования флексами, тк кнопка должна быть 
+        всегда внизу, так я расставил их по разным сторонам свойством space-between -->
             <article class="standart_padding">
                 <div class="inst__text">
                     <h2>Instagram</h2>
@@ -259,8 +260,8 @@
             <article>
                 <h2>Dribbble</h2>
                 <p>
-                    Each dribbble shot is made with love and care. 
-                    Do check out my work on Dribbble. 
+                    Each dribbble shot is made with love and care.
+                    Do check out my work on Dribbble.
                     Likes and comments are appreciated.
                 </p>
                 <button>Follow me on Dribbble</button>
@@ -270,7 +271,61 @@
                 <img src="./images/dribbble.png" alt="dribbble">
             </div>
         </section>
-        <section class="about_me"></section>
+        <section class="about_me">
+            <!-- Можно было бы прописать параграфу и кнопке глобальные стили 
+            и присваивать их, вместо задания свойств в каждом блоке, но я решил не 
+            заниматься этим в середине проекта, мы делали его линейно, без начальной 
+            аналитики и решений по проекту, поэтому в середине задавать 
+            универсальные стили поздновато -->
+            <article>
+                <h2>This is what people say about me</h2>
+                <p>
+                    Here are a few lines from people who
+                    I have worked with over the past
+                    8+ years in my design career.
+                </p>
+                <button>See all testimonials</button>
+            </article>
+            <div class="about_me__feedback">
+                <div>
+                    <img src="./images/feedback1.png" alt="">
+                    <div class="about_me__feedback__text">
+                        <p>
+                            ‘’Robin is one of the best designers 
+                            I have worked with in my entire life. 
+                            He is a designer who is very capable of taking up 
+                            complex projects and delivers impeccable design.’’
+                        </p>
+                        <p>Richard Owens</p>
+                        <p>CEO, Company 1</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/feedback2.png" alt="">
+                    <div class="about_me__feedback__text">
+                        <p>
+                            ‘’I think Robin has an incredible gift. 
+                            It has been an absolute pleasure 
+                            to work with a designer of this caliber.’’
+                        </p>
+                        <p>Emily Parker</p>
+                        <p>CEO, Company 2</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./images/feedback3.png" alt="">
+                    <div class="about_me__feedback__text">
+                        <p>
+                            ‘’All I can say that, Robin is a phenomenal designer. 
+                            The wavelength at which he thinks is astoundaing. 
+                            I love the focus, passion and attention to detial in the design.’’
+                        </p>
+                        <p>Vincent Rudd</p>
+                        <p>CEO, Company 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="photo"></section>
         <section class="form"></section>
     </main>
